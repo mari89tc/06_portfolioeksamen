@@ -36,12 +36,7 @@ img {
 body {
   background-color: var(--secondary);
 }
-/*
-main {
-  max-width: 1100px;
-  margin-inline: auto;
-  margin: var(--space-lg);
-}
+
 /* Fyld ud på siden med padding */
 main,
 .full {
@@ -279,6 +274,9 @@ footer a:hover {
   .boks {
     padding-block: 30%;
   }
+  .boks {
+    padding-block: 20%;
+  }
 }
 .gallery {
   display: grid;
@@ -355,6 +353,10 @@ footer a:hover {
   width: 70%;
 }
 
+.padding_kant {
+  padding-block: 30px;
+}
+
 @media (min-width: 700px) {
   .vertical {
     transform: rotate(-90deg);
@@ -373,6 +375,42 @@ footer a:hover {
 }
 
 /* forms*/
+@media (min-width: 700px) {
+  input[type="text"],
+  input[type="tel"] {
+    border: none;
+    background-color: var(--secondary);
+    border: 2px solid var(--brand_color);
+    width: 50%;
+    padding: 12px;
+  }
+  #besked {
+    border: 2px solid var(--brand_color);
+    background-color: var(--secondary);
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 50%;
+  }
+
+  label {
+    color: var(--brand_color);
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: var(--font-xxs);
+    text-decoration: none;
+  }
+  form button {
+    background-color: var(--font-color);
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: var(--font-xxs);
+    padding: 15px;
+    border-radius: 10px;
+    color: var(--brand_color);
+    margin-top: 10px;
+    width: 50%;
+  }
+}
 input {
   border: none;
   border-bottom: 2px solid var(--brand_color);
@@ -392,7 +430,7 @@ input[type="tel"] {
   border: none;
   background-color: var(--secondary);
   border: 2px solid var(--brand_color);
-  width: 50%;
+  width: 80%;
   padding: 12px;
 }
 #besked {
@@ -400,7 +438,7 @@ input[type="tel"] {
   background-color: var(--secondary);
   margin-top: 12px;
   margin-bottom: 12px;
-  width: 50%;
+  width: 80%;
 }
 
 label {
@@ -419,7 +457,7 @@ form button {
   border-radius: 10px;
   color: var(--brand_color);
   margin-top: 10px;
-  width: 50%;
+  width: 80%;
 }
 
 /* Portfolio sider */
