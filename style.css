@@ -264,7 +264,7 @@ footer a:hover {
   color: var(--font-color);
   font-family: "Manrope", sans-serif;
   font-weight: 400;
-  font-size: var(--font-footer);
+  font-size: var(--font-xs);
   text-decoration: none;
   border-bottom: solid #1c1c1d;
 }
@@ -352,7 +352,14 @@ footer a:hover {
 .om_img {
   width: 70%;
 }
-
+.om_mig a {
+  color: var(--font-color);
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: var(--font-xs);
+  text-decoration: none;
+  border-bottom: solid 2px var(--font-color);
+}
 .padding_kant {
   padding-block: 30px;
 }
