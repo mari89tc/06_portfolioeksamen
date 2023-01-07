@@ -262,7 +262,7 @@ footer a:hover {
 /* Portfolio */
 .knap_side a {
   color: var(--font-color);
-  font-family: "Playfair Display", serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: var(--font-footer);
   text-decoration: none;
@@ -373,7 +373,20 @@ footer a:hover {
   place-self: center;
   text-align: center;
 }
-
+.kontakt a {
+  color: var(--font-color);
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: var(--font-xs);
+  text-decoration: none;
+}
+.kontakt a:hover {
+  color: var(--brand_color);
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: var(--font-xs);
+  text-decoration: none;
+}
 /* forms*/
 @media (min-width: 700px) {
   input[type="text"],
