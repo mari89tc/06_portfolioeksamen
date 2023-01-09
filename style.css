@@ -11,7 +11,7 @@ html {
   --font-footer: 15px;
   --font-xxs: 18px;
   --font-xs: 22px;
-  --font-sm: 25px;
+  --font-sm: 30px;
   --font-md: 35px;
   --font-lg: 80px;
   --font-regular: 400;
@@ -94,6 +94,33 @@ header a:active {
 }
 
 /* FONTE */
+@media (max-width: 700px) {
+  h1 {
+    font-size: var(--font-md);
+    color: var(--brand_color);
+    font-family: "Unbounded", cursive;
+    font-weight: 400;
+  }
+  h2 {
+    font-size: var(--font-sm);
+    color: var(--brand_color);
+    font-family: "Unbounded", cursive;
+    font-weight: 400;
+  }
+  h3 {
+    font-size: var(--font-xs);
+    color: var(--brand_color);
+    font-family: "Manrope", sans-serif;
+    font-weight: 900;
+  }
+  p {
+    font-size: var(--font-xxs);
+    color: var(--font-color);
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+  }
+}
+
 h1 {
   font-size: var(--font-lg);
   color: var(--brand_color);
@@ -129,18 +156,18 @@ section {
 
 /* LOGO */
 .logo {
-  width: 30%;
-  margin-inline-start: 30px;
-  margin-top: 30px;
+  width: 40%;
+  margin-inline-start: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 /*multimedie logo */
 .multi_logo {
-  width: 50%;
+  width: 80%;
   margin-inline-start: 10px;
-  margin-left: 230px;
+  margin-left: 60px;
   margin-top: 210px;
-  margin-bottom: 300px;
+  margin-bottom: 100px;
 }
 @media (min-width: 700px) {
   .logo {
@@ -201,7 +228,7 @@ section {
 }
 .main-menu {
   text-align: end;
-  padding: 20px;
+  padding: 5px;
 }
 .main-menu button {
   margin: 20px;
@@ -244,17 +271,21 @@ footer a:hover {
 }
 @media (max-width: 700px) {
   .grid_1_1_1 {
-    padding-left: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    place-content: center;
+    padding-left: 30px;
   }
   footer a,
   footer p {
-    font-size: 11px;
+    font-size: 9px;
   }
   footer a:hover {
     color: var(--brand_color);
     font-family: "Manrope", sans-serif;
     font-weight: 500;
-    font-size: 11px;
+    font-size: 9px;
     text-decoration: none;
   }
 }
@@ -363,6 +394,12 @@ footer a:hover {
 .om_mig {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.vertical h1 {
+  font-size: var(--font-md);
+  color: var(--brand_color);
+  font-family: "Unbounded", cursive;
+  font-weight: 400;
 }
 @media (min-width: 700px) {
   .vertical {
@@ -521,6 +558,47 @@ form button {
     width: 80%;
   }
 }
+
+@media (max-width: 700px) {
+  .grid_1_1 h2 {
+    font-size: var(--font-sm);
+    color: var(--font-color);
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .grid_1_1 h3 {
+    font-size: var(--font-xs);
+    color: var(--font-color);
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .grid_1_1 a {
+    font-size: var(--font-xxs);
+    color: var(--font-color);
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    border-bottom: solid 2px var(--font-color);
+  }
+  .pitch h3 {
+    font-size: var(--font-xs);
+    color: var(--font-color);
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .pitch a {
+    font-size: var(--font-xxs);
+    color: var(--font-color);
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+  }
+}
+
 .grid_1_1 h3 {
   font-size: var(--font-sm);
   color: var(--font-color);
