@@ -110,7 +110,7 @@ h3 {
   font-size: var(--font-sm);
   color: var(--brand_color);
   font-family: "Manrope", sans-serif;
-  font-weight: 400;
+  font-weight: 900;
 }
 p {
   font-size: var(--font-xs);
@@ -310,7 +310,7 @@ footer a:hover {
   color: var(--brand_color);
   font-family: "Manrope", sans-serif;
   font-weight: 400;
-  place-self: center;
+  place-self: bottom;
   text-align: center;
 }
 
@@ -319,7 +319,7 @@ footer a:hover {
   color: var(--brand_color);
   font-family: "Manrope", sans-serif;
   font-weight: 400;
-  place-self: center;
+  place-self: bottom;
   text-align: center;
 }
 .gallery .boks .ps {
@@ -360,10 +360,10 @@ footer a:hover {
   text-decoration: none;
   border-bottom: solid 2px var(--font-color);
 }
-.padding_kant {
-  padding-block: 30px;
+.om_mig {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-
 @media (min-width: 700px) {
   .vertical {
     transform: rotate(-90deg);
@@ -393,6 +393,35 @@ footer a:hover {
   font-size: var(--font-xs);
   text-decoration: none;
 }
+.logo_boks {
+  width: 50%;
+  margin-inline-start: 110px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.logo_boks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  place-content: center;
+  gap: 10px;
+}
+@media (min-width: 700px) {
+  .logo_boks {
+    width: 25%;
+    margin-inline-start: 400px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .logo_boks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    place-content: center;
+    gap: 10px;
+  }
+}
+
 /* forms*/
 @media (min-width: 700px) {
   input[type="text"],
@@ -506,4 +535,27 @@ form button {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   border-bottom: solid 2px var(--font-color);
+}
+.grid_1_1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.pitch h3 {
+  font-size: var(--font-sm);
+  color: var(--font-color);
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.pitch a {
+  font-size: var(--font-xs);
+  color: var(--font-color);
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+}
+.pitch {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
