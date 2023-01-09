@@ -396,7 +396,7 @@ footer a:hover {
   padding-bottom: 20px;
 }
 .vertical h1 {
-  font-size: var(--font-md);
+  font-size: 10px;
   color: var(--brand_color);
   font-family: "Unbounded", cursive;
   font-weight: 400;
