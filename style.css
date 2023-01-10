@@ -310,10 +310,6 @@ footer a:hover {
   .boks {
     padding-block: 20%;
   }
-  .gallery .boks {
-    height: 190px;
-    width: 200px;
-  }
 }
 .gallery {
   display: grid;
@@ -321,56 +317,54 @@ footer a:hover {
   gap: var(--space-md);
   margin-top: 100px;
 }
-.gallery .boks {
+.boks {
   display: grid;
   place-items: center;
   height: 310px;
   width: 320px;
 }
-.gallery .boks .ps,
 .boks .ps,
-.gallery .boks h3 p a {
+.boks h3 {
   grid-area: 1/1;
   transition: 0.3s;
 }
 
-.gallery .boks h3 {
+.boks h3 {
   font-size: var(--font-sm);
   color: var(--brand_color);
   font-family: "Unbounded", cursive;
   font-weight: 400;
   place-items: center;
   text-align: center;
-  padding-bottom: 120px;
 }
-.gallery .boks p {
+.boks p {
   font-size: var(--font-xs);
   color: var(--brand_color);
   font-family: "Manrope", sans-serif;
   font-weight: 400;
-  place-self: bottom;
+  place-self: center;
   text-align: center;
 }
 
-.gallery .boks a {
+.boks a {
   font-size: var(--font-xs);
   color: var(--brand_color);
   font-family: "Manrope", sans-serif;
   font-weight: 400;
-  place-self: bottom;
+  place-self: center;
   text-align: center;
 }
-.gallery .boks .ps {
+.boks .ps {
   opacity: 0;
   z-index: 3;
 }
-.gallery .boks h3 {
+.boks h3 {
   z-index: 3;
 }
-.gallery .boks:hover h3 {
+.boks:hover h3 {
   opacity: 0;
 }
-.gallery .boks:hover .ps {
+.boks:hover .ps {
   opacity: 1;
   display: block;
 }
@@ -378,11 +372,9 @@ footer a:hover {
   background-color: var(--font-color);
   transition: 0.3s;
 }
-.gallery .boks:hover {
+.boks:hover {
   background-color: var(--font-color);
   opacity: 90%;
-}
-.boks:hover {
   transform: scale(1.1);
 }
 
