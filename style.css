@@ -9,6 +9,7 @@ html {
   --space-lg: 30px;
   --space-xl: 40px;
   --font-footer: 15px;
+  --font-xxxs: 12px;
   --font-xxs: 18px;
   --font-xs: 22px;
   --font-sm: 30px;
@@ -96,25 +97,25 @@ header a:active {
 /* FONTE */
 @media (max-width: 700px) {
   h1 {
-    font-size: var(--font-md);
-    color: var(--brand_color);
-    font-family: "Unbounded", cursive;
-    font-weight: 400;
-  }
-  h2 {
     font-size: var(--font-sm);
     color: var(--brand_color);
     font-family: "Unbounded", cursive;
     font-weight: 400;
   }
-  h3 {
+  h2 {
     font-size: var(--font-xs);
+    color: var(--brand_color);
+    font-family: "Unbounded", cursive;
+    font-weight: 400;
+  }
+  h3 {
+    font-size: var(--font-xxs);
     color: var(--brand_color);
     font-family: "Manrope", sans-serif;
     font-weight: 900;
   }
   p {
-    font-size: var(--font-xxs);
+    font-size: var(--font-xxxs);
     color: var(--font-color);
     font-family: "Manrope", sans-serif;
     font-weight: 400;
@@ -395,12 +396,7 @@ footer a:hover {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.vertical h1 {
-  font-size: 10px;
-  color: var(--brand_color);
-  font-family: "Unbounded", cursive;
-  font-weight: 400;
-}
+
 @media (min-width: 700px) {
   .vertical {
     transform: rotate(-90deg);
