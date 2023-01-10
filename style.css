@@ -120,31 +120,44 @@ header a:active {
     font-family: "Manrope", sans-serif;
     font-weight: 400;
   }
+  a {
+    font-size: var(--font-xxs);
+    color: var(--font-color);
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+  }
 }
-
-h1 {
-  font-size: var(--font-lg);
-  color: var(--brand_color);
-  font-family: "Unbounded", cursive;
-  font-weight: 400;
-}
-h2 {
-  font-size: var(--font-md);
-  color: var(--brand_color);
-  font-family: "Unbounded", cursive;
-  font-weight: 400;
-}
-h3 {
-  font-size: var(--font-sm);
-  color: var(--brand_color);
-  font-family: "Manrope", sans-serif;
-  font-weight: 900;
-}
-p {
-  font-size: var(--font-xs);
-  color: var(--font-color);
-  font-family: "Manrope", sans-serif;
-  font-weight: 400;
+@media (min-width: 700px) {
+  h1 {
+    font-size: var(--font-lg);
+    color: var(--brand_color);
+    font-family: "Unbounded", cursive;
+    font-weight: 400;
+  }
+  h2 {
+    font-size: var(--font-md);
+    color: var(--brand_color);
+    font-family: "Unbounded", cursive;
+    font-weight: 400;
+  }
+  h3 {
+    font-size: var(--font-sm);
+    color: var(--brand_color);
+    font-family: "Manrope", sans-serif;
+    font-weight: 900;
+  }
+  p {
+    font-size: var(--font-xs);
+    color: var(--font-color);
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+  }
+  a {
+    font-size: var(--font-xs);
+    color: var(--font-color);
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+  }
 }
 
 h2 {
@@ -166,7 +179,7 @@ section {
 .multi_logo {
   width: 80%;
   margin-inline-start: 10px;
-  margin-left: 60px;
+  margin-left: 55px;
   margin-top: 210px;
   margin-bottom: 100px;
 }
@@ -242,7 +255,7 @@ section {
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   place-content: center;
-  padding-left: 180px;
+  padding-left: 280px;
 }
 footer {
   margin-top: 60px;
@@ -292,20 +305,21 @@ footer a:hover {
 }
 
 /* Portfolio */
-
 /* Portfolio grid */
 @media (max-width: 700px) {
   .boks {
-    padding-block: 30%;
-  }
-  .boks {
     padding-block: 20%;
+  }
+  .gallery .boks {
+    height: 190px;
+    width: 200px;
   }
 }
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
   gap: var(--space-md);
+  margin-top: 100px;
 }
 .gallery .boks {
   display: grid;
@@ -390,6 +404,9 @@ footer a:hover {
 }
 
 @media (max-width: 700px) {
+  .grid_1 img {
+    margin-left: 35px;
+  }
   .vertical {
     font-size: var(--font-md);
     color: var(--brand_color);
@@ -404,6 +421,20 @@ footer a:hover {
     font-weight: 400;
     padding: 15px;
   }
+  .kontakt a {
+    color: var(--font-color);
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: var(--font-xxs);
+    text-decoration: none;
+  }
+  .kontakt a:hover {
+    color: var(--brand_color);
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: var(--font-xxs);
+    text-decoration: none;
+  }
 }
 
 @media (min-width: 700px) {
@@ -415,30 +446,32 @@ footer a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 20px;
+    margin-top: 100px;
+  }
+  .kontakt a {
+    color: var(--font-color);
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: var(--font-xs);
+    text-decoration: none;
+  }
+  .kontakt a:hover {
+    color: var(--brand_color);
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: var(--font-xs);
+    text-decoration: none;
   }
 }
 .kontakt {
   place-self: center;
   text-align: center;
 }
-.kontakt a {
-  color: var(--font-color);
-  font-family: "Manrope", sans-serif;
-  font-weight: 400;
-  font-size: var(--font-xs);
-  text-decoration: none;
-}
-.kontakt a:hover {
-  color: var(--brand_color);
-  font-family: "Manrope", sans-serif;
-  font-weight: 400;
-  font-size: var(--font-xs);
-  text-decoration: none;
-}
+
 .logo_boks {
   width: 50%;
-  margin-inline-start: 85px;
-  margin-top: 30px;
+  margin-inline-start: 65px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 .logo_boks {
@@ -572,6 +605,9 @@ form button {
 }
 
 @media (max-width: 700px) {
+  .grid_1_1 {
+    padding: 15px;
+  }
   .grid_1_1 h2 {
     font-size: var(--font-sm);
     color: var(--font-color);
@@ -588,12 +624,25 @@ form button {
     margin-bottom: 20px;
     margin-top: 10px;
   }
+  .grid_1_1 p {
+    font-size: var(--font-xxs);
+    color: var(--font-color);
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+  }
   .grid_1_1 a {
     font-size: var(--font-xxs);
     color: var(--font-color);
     font-family: "Manrope", sans-serif;
     font-weight: 400;
     border-bottom: solid 2px var(--font-color);
+  }
+  .knap_side {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .pitch {
+    padding: 15px;
   }
   .pitch h3 {
     font-size: var(--font-xs);
@@ -603,7 +652,7 @@ form button {
     margin-bottom: 20px;
     margin-top: 10px;
   }
-  .pitch a {
+  .pitch p {
     font-size: var(--font-xxs);
     color: var(--font-color);
     font-family: "Manrope", sans-serif;
